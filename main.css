@@ -118,10 +118,6 @@ h2{
     /* height: 400px; */
 }
 
-.works-page{
-    height: 300vh;
-}
-
 .text-works-page{
     margin-top: 40px;
     z-index: 5;
@@ -152,4 +148,13 @@ h2{
     width: 92vw;
     margin-top: -50px;
     margin-left: -7vw;
+}
+
+.contact{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
