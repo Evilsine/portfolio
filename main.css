@@ -42,13 +42,14 @@ p{
 
 .introduction{
     transform: translate(10px);
-    
 }
 
 em{
+    display: inline-block;
     font-style: normal;
-    color: rgb(83, 83, 83);
-    animation: emphasize-text 1s;
+    /* animation: emphasize-text 2s; */
+    /* animation-delay: 2s; */
+    /* animation-fill-mode: forwards; */
 }
 
 #paragraph-two{
@@ -102,7 +103,7 @@ em{
 
 h2{
     font-size: 90px;
-    color: rgb(83, 83, 83);
+    color: #535353;
     margin-top: -25px;
     z-index: 2;
 }

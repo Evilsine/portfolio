@@ -1,25 +1,6 @@
-const composer = document.querySelector('#composer');
-const soundDesigner = document.querySelector('#sound-designer');
-const visualArtist = document.querySelector('#visual-artist');
-const developer = document.querySelector('#developer');
-
-composer.addEventListener('animationend',() => {
-    console.log("animation ended")
-    composer.style.display = "none";
-    soundDesigner.style.display = "block";
+gsap.from('.intro-animation',{
+    duration: 1, opacity:0, y: 50, stagger:0.4, ease: "back.out(1.7)", ease: "power2"
 })
-soundDesigner.addEventListener('animationend',() => {
-    console.log("animation ended")
-    soundDesigner.style.display = "none";
-    visualArtist.style.display = "block";
-})
-visualArtist.addEventListener('animationend',() => {
-    console.log("animation ended")
-    visualArtist.style.display = "none";
-    developer.style.display = "block";
-})
-developer.addEventListener('animationend',() => {
-    console.log("animation ended")
-    developer.style.display = "none";
-    composer.style.display = "block";
+gsap.to("em",{
+    delay: 1, duration: 1, color:"#535353", stagger: 0.2, ease: "power2"
 })

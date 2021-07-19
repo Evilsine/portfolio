@@ -16,15 +16,15 @@
         transform: translateY(-100px);
     }
 }
-
+/* 
 @keyframes emphasize-text{
     from{
         color: rgb(141, 141, 141);
     }
     to{
-        color: rgb(83, 83, 83);
+        color: #535353;
     }
-}
+} */
 
 @keyframes slide-left{
     from{
