@@ -23,12 +23,16 @@ body{
     font-size: 30px;
 }
 
-section{
+/* section{
     height: 100vh;
-}
+} */
 
 p{
     color: rgb(141, 141, 141);
+}
+
+.first-page{
+    height: 100vh;
 }
 
 #hi{
@@ -108,17 +112,17 @@ h2{
     
 }
 
-.two{
+.skills-page{
     margin-top: 80px;
     /* background: black; */
-    height: 400px;
+    /* height: 400px; */
 }
 
-.three{
+.works-page{
     height: 300vh;
 }
 
-.text-three{
+.text-works-page{
     margin-top: 40px;
     z-index: 5;
     position: relative;
