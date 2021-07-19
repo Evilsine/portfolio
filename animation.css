@@ -1,0 +1,45 @@
+@keyframes fade-in-out{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    20%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    80%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes emphasize-text{
+    from{
+        color: rgb(141, 141, 141);
+    }
+    to{
+        color: rgb(83, 83, 83);
+    }
+}
+
+@keyframes slide-left{
+    from{
+        transform: translate(0);
+        /* color: black; */
+    }
+    to{
+        transform: translate(-2000px);
+    }
+}
+@keyframes slide-right{
+    0%{
+        transform: translate(-2000px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}

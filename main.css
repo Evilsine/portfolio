@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background: rgb(223, 223, 223);
+    font-family: 'Arial Black', 'Avenir-Black';
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    width: 90%;
+    font-size: 30px;
+}
+
+section{
+    height: 100vh;
+}
+
+p{
+    color: rgb(141, 141, 141);
+}
+
+#hi{
+    font-size: 120pt;
+    color: rgb(83, 83, 83);
+}
+
+.introduction{
+    transform: translate(10px);
+    
+}
+
+em{
+    font-style: normal;
+    color: rgb(83, 83, 83);
+    animation: emphasize-text 1s;
+}
+
+#paragraph-two{
+    font-size: 70%;
+}
+
+#torus{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 70px;
+    right: -150px;
+    z-index: -1;
+}
+
+.skills{
+    list-style-type: none;
+    white-space: nowrap;
+    line-height: 150%;
+    margin-left: -5vw;
+}
+
+.skills li{
+    padding-right: 0.4em;
+    font-size: 50px;
+    display: inline;
+}
+
+.skill-name{
+    color: rgb(145, 145, 145);
+}
+
+.tool-name{
+    font-size: 48px;
+    -webkit-text-stroke: 1.5px rgb(134, 134, 134);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+.line-one, .line-three{
+    animation: slide-left 70s linear infinite;
+}
+.line-two, .line-four{
+    animation: slide-right 70s linear infinite;
+}
+
+.skills-text{
+    margin-top: 10px;
+    text-align: right;
+    color: rgb(192, 192, 192);
+}
+
+h2{
+    font-size: 90px;
+    color: rgb(83, 83, 83);
+    margin-top: -25px;
+    z-index: 2;
+}
+
+#skills-title{
+    font-size: 90px;
+    
+}
+
+.two{
+    margin-top: 80px;
+    /* background: black; */
+    height: 400px;
+}
+
+.three{
+    height: 300vh;
+}
+
+.text-three{
+    margin-top: 40px;
+    z-index: 5;
+    position: relative;
+}
+
+.works-main-image{
+    width: 92vw;
+    z-index: 0;
+    filter: grayscale(80%);
+    transition: 2s;
+}
+
+.works-main-image:hover{
+    filter: grayscale(0);
+}
+
+#welcome-to-win95{
+    margin-top: -50px;
+    margin-left: 5vw;
+}
+
+.or-this{
+    text-align: right;
+}
+
+#video-disintegrate{
+    width: 92vw;
+    margin-top: -50px;
+    margin-left: -7vw;
+}
