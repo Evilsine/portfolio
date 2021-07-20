@@ -1,16 +1,26 @@
+let containerSize = document.getElementById("torus").offsetWidth;
+
+window.addEventListener("resize", function(){
+  containerSize = document.getElementById("torus").offsetWidth;
+  console.log(containerSize)
+})
+
 function setup() {
-    var torus = createCanvas(800, 800, WEBGL);
+    var torus = createCanvas(containerSize, containerSize, WEBGL);
         torus.parent('torus');
     frameRate(60)
   }
   
   let rotation = 0;
-  let torusSize = 200;
-  let boxSize = 100;
+  let size = containerSize / 4;
+  let boxSize = size / 2;
   let boxDensity = 0.04;
+  let torusSize = size;
   
   function draw() {
-    torusSize = map(sin(rotation * 0.1), -1, 1, 150, 200);
+    size = containerSize / 4;
+    boxSize = size / 2;
+    torusSize = map(sin(rotation * 0.1), -1, 1, 0.9, 1.2) * size;
     rotateY(radians(rotation));
     rotateX(radians(rotation));
     clear();
@@ -31,5 +41,5 @@ function setup() {
   }
   
   function windowResized(){
-    resizeCanvas(windowWidth, windowHeight - 20);
+    resizeCanvas(containerSize, containerSize);
   }

@@ -28,11 +28,30 @@ body{
 
 @media(max-width: 700px){
     .loader h1{
-        font-size: 50px;
+        font-size: 10vw;
     }
     .loader h2{
-        font-size: 34.5px;
-        line-height: 70px;
+        font-size: 8vw;
+        margin-bottom: 2vh;
+    }
+
+    #hi{
+        font-size: 120px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+    #paragraph-two{
+        font-size: 16px;
+    }
+
+    #torus{
+        /* background: white; */
+        position: relative;
+        width: 90vw;
+        height: 90vw;
+        bottom: 0%;
     }
 }
 
@@ -43,9 +62,26 @@ body{
     .loader h2{
         font-size: 68.5px;
     }
+
+    #hi{
+        font-size: 120pt;
+    }
+    #paragraph-two{
+        font-size: 70%;
+    }
+
+    #torus{
+        /* background: white; */
+        position: absolute;
+        width: 70vw;
+        height: 70vw;
+        bottom: -20%;
+        right: -10%;
+    }
 }
 
 .loader-text{
+    display: none;
     position: absolute;
     left: 5vw;
     bottom: 5vw;
@@ -56,13 +92,13 @@ body{
 }
 
 .loader h2{
-    
     -webkit-text-stroke: 1.5px rgb(112, 112, 112);
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
 .loader-fade{
     animation: loaderFade 1s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -82,7 +118,6 @@ p{
 }
 
 #hi{
-    font-size: 120pt;
     color: rgb(83, 83, 83);
 }
 
@@ -95,16 +130,7 @@ em{
     font-style: normal;
 }
 
-#paragraph-two{
-    font-size: 70%;
-}
-
 #torus{
-    width: 800px;
-    height: 800px;
-    position: absolute;
-    top: 70px;
-    right: -150px;
     z-index: -1;
 }
 

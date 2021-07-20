@@ -1,7 +1,6 @@
 @keyframes slide-left{
     from{
         transform: translate(0);
-        /* color: black; */
     }
     to{
         transform: translate(-2000px);
