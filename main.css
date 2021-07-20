@@ -78,6 +78,9 @@ body{
         bottom: -20%;
         right: -10%;
     }
+    .skills-page{
+        margin-top: 80px;
+    }
 }
 
 .loader-text{
@@ -179,10 +182,6 @@ h2{
 
 #skills-title{
     font-size: 90px;
-}
-
-.skills-page{
-    margin-top: 80px;
 }
 
 .text-works-page{
