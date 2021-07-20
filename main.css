@@ -23,9 +23,23 @@ body{
     z-index: 10;
     background: rgb(43, 43, 43);
     color: rgb(153, 153, 153);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.loader-text{
+    position: absolute;
+    left: 5vw;
+    bottom: 5vw;
+}
+
+.loader h1{
+    font-size: 90px;
+    color: rgb(170, 170, 170);
+}
+
+.loader h2{
+    font-size: 68.5px;
+    -webkit-text-stroke: 1.5px rgb(112, 112, 112);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
 .loader-fade{
@@ -39,10 +53,6 @@ body{
     width: 90%;
     font-size: 30px;
 }
-
-/* section{
-    height: 100vh;
-} */
 
 p{
     color: rgb(141, 141, 141);
@@ -64,9 +74,6 @@ p{
 em{
     display: inline-block;
     font-style: normal;
-    /* animation: emphasize-text 2s; */
-    /* animation-delay: 2s; */
-    /* animation-fill-mode: forwards; */
 }
 
 #paragraph-two{
@@ -127,13 +134,10 @@ h2{
 
 #skills-title{
     font-size: 90px;
-    
 }
 
 .skills-page{
     margin-top: 80px;
-    /* background: black; */
-    /* height: 400px; */
 }
 
 .text-works-page{
