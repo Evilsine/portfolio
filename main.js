@@ -1,3 +1,9 @@
+window.addEventListener("load", function(){
+    console.log("loaded")
+    const loader = document.querySelector(".loader")
+    loader.classList.add("loader-fade")
+})
+
 gsap.from('.intro-animation',{
     duration: 1, opacity:0, y: 50, stagger:0.4, ease: "back.out(1.7)", ease: "power2"
 })

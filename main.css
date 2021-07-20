@@ -16,6 +16,23 @@ body{
     overflow-x: hidden;
 }
 
+.loader{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background: rgb(43, 43, 43);
+    color: rgb(153, 153, 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-fade{
+    animation: loaderFade 1s;
+    animation-fill-mode: forwards;
+}
+
 .main{
     position: relative;
     height: 100vh;
