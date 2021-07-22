@@ -16,6 +16,11 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+}
+
 .loader{
     position: fixed;
     height: 100%;
